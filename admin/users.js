@@ -4,8 +4,6 @@ var os = require('os');
 
 var User = require('../data/chatDB').User;
 
-var users = require("./../data/users.json");
-
 var router = express.Router();
 module.exports = router;
 

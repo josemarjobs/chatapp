@@ -26,9 +26,13 @@ app.use("/admin/users", adminUsersRouter);
 var apiRouter = require("./api");
 app.use("/api", apiRouter);
 
+var sriracha = require('sriracha-admin');
+app.use('/sriracha', sriracha());
+
 app.listen(3000, function () {
   console.log('Chat app listening on port 3000!');
 });
+
 
 process.on('SIGINT', () => {
   require('./data/chatDB').close(() => {
