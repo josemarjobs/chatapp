@@ -1,4 +1,4 @@
-var users = require('./users')
+var users = require('./users.json')
 var User = require('./chatDB').User;
 var chatDB = require('./chatDB');
 function importUsers() {

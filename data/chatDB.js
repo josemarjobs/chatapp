@@ -3,12 +3,12 @@ var MongoClient = require('mongodb').MongoClient;
 var mongoose = require('mongoose');
 
 
-var url = "mongodb://localhost:27017/chat"
+var url = "mongodb://mongodb/chat"
+
 var connect = MongoClient.connect(url);
 
 mongoose.Promise = global.Promise;
 mongoose.connect(url);
-
 
 // var Logger = require('mongodb').Logger;
 // Logger.setLevel("debug");
